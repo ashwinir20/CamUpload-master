@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/skulls"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <ImageButton
+        android:id="@+id/ir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/roundcorner"
+        android:src="@mipmap/ic_do_not_disturb_on_black_48dp"
+        android:layout_marginEnd="30dp"
+        android:layout_alignTop="@+id/ar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <ImageButton
+        android:id="@+id/cpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_photo_camera_black_48dp"
+        android:onClick="buttonImageClick"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_alignTop="@+id/up"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/roundcorner"
+        android:padding="1dp"/>
+
+    <ImageButton
+        android:id="@+id/up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        android:src="@mipmap/ic_cloud_upload_black_48dp"
+        android:onClick="buttonUploadClick"
+        android:background="@drawable/roundcorner"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/cpic"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp" />
+
+    <ImageButton
+        android:id="@+id/ar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp"
+        android:src="@mipmap/ic_people_black_48dp"
+        android:background="@drawable/roundcorner"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/ir"
+        android:layout_toStartOf="@+id/ir" />
+
+
+</RelativeLayout>
